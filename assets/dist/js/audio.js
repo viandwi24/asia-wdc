@@ -1,6 +1,6 @@
 myaudio = {
     audios: [],
-    basePath: '../assets/audio/',
+            basePath: 'assets/audio/',
     func: () => console.log("Audio : onloaded"),
 
     load(data) {
