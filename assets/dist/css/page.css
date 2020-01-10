@@ -1,0 +1,90 @@
+/*
+ _______  _______  _______  _______        ___  _______ 
+|       ||   _   ||       ||       |      |   ||       |
+|    _  ||  |_|  ||    ___||    ___|      |   ||  _____|
+|   |_| ||       ||   | __ |   |___       |   || |_____ 
+|    ___||       ||   ||  ||    ___|   ___|   ||_____  |
+|   |    |   _   ||   |_| ||   |___   |       | _____| |
+|___|    |__| |__||_______||_______|  |_______||_______|
+
+[+] script ini murni ditulis oleh author
+[+] Author : Alfian Dwi Nugraha & Rendi Dwi
+
+           _                                           _ _ 
+          (_)               ___                       | (_)
+    __   ___  __ _ _ __    ( _ )    _ __ ___ _ __   __| |_ 
+    \ \ / / |/ _` | '_ \   / _ \/\ | '__/ _ \ '_ \ / _` | |
+     \ V /| | (_| | | | | | (_>  < | | |  __/ | | | (_| | |
+      \_/ |_|\__,_|_| |_|  \___/\/ |_|  \___|_| |_|\__,_|_|
+
+   [+] Murni ditulis oleh Alfian Dwi Nugraha & Rendi Dwi [+]
+
+ */
+.page .sections {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.page .sections .section {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.page .sections .section.active { z-index: 2; }
+
+.page .sections .section .section-container-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.page .nav-btn {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 1.5rem;
+    z-index: 11;
+}
+
+.config-btn .dropdown-toggle::after {
+    border: none;    
+    margin: 0;
+    padding: 0;
+}
+
+
+.config-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.page .nav-btn .btn,
+.config-btn .btn {
+    border: 1px solid white;
+    color: white;
+    padding: .3rem .8rem;
+    background: none;
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+
+.page .nav-btn .btn.active,
+.config-btn .btn:hover,
+.page .nav-btn .btn:hover {
+    color: #4a69bb;
+    background: white;
+}
